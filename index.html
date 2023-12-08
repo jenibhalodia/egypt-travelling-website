@@ -1,1 +1,432 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt tarvel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+    <!-- <for swiper> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+   
+
+</head>
+
+<body>
+    <div w3-include-html="navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+
+    <!-- Start : Corosoul -->
+    <div class="swiper mySwiper w-full h-[800px]" id="mySwiper1">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide flex flex-col">
+                <img
+                    src="https://media.experienceegypt.eg/img/Corals - SliderCorals - Slider (2)Corals - SliderCorals - Slider (2).jpeg">
+                <div class="absolute text-5xl text-white font-bold">
+                    Swim in Stunning Shades of
+                    <div>
+                        Blue
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col">
+                <img src="https://media.experienceegypt.eg/img/Mohamed_Hakem_-10 (1)Mohamed_Hakem_-10 (1).jpeg">
+                <div class="absolute text-5xl text-white font-bold">
+                    Explore Unforgettable
+                    <div>
+                        Landscapes
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col">
+                <img src="https://media.experienceegypt.eg/img/WhatsApp Image 2022-06-14 at 1.23.45 PM (1).jpg">
+                <div class="absolute text-5xl text-white font-bold">
+                    Relive History
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next font-bold text-white"></div>
+        <div class="swiper-button-prev font-bold text-white"></div>
+        <div class="swiper-pagination  font-bold  h-10 "></div>
+    </div>
+    <!-- End : Corosoul -->
+
+    <!-- Start : Where to GO -->
+    <div class="bg-[#FBE068] mt-6	h-64  	">
+        <div class="flex flex-col mx-72">
+            <div class="items-start ">
+                <div class="font-bold text-3xl mt-7 ml-0 hover:text-blue-900">
+                    <a href="#">WHERE TO GO</a>
+                </div>
+                <div class="text-xl mt-3">
+                    Pick your destination and start your Egypt experience
+                    now
+                </div>
+            </div>
+            <div class="flex flex-row justify-center mt-5 ">
+                <div>
+                    <div>
+                        <img class="h-[324px] w-[390px]"
+                            src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_24_45_511.jpeg"
+                            alt="img">
+                    </div>
+                    <div class="bg-blue-900 text-cyan-500 font-bold h-20 text-xl pt-7 pl-5">
+                        THE NILE
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="h-[324px] w-[390px]"
+                            src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_27_31_403.jpeg"
+                            alt="img">
+                    </div>
+                    <div class="bg-red-500 text-yellow-200 font-bold h-20 text-xl pt-7 pl-5">
+                        THE RED SEA
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="h-[324px] w-[390px]"
+                            src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_28_42_326.jpeg"
+                            alt="img">
+                    </div>
+                    <div class="bg-cyan-400 text-blue-800 font-bold h-20 text-xl pt-7 pl-5">
+                        THE MED
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="h-[324px] w-[390px]"
+                            src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_29_43_278.jpeg"
+                            alt="img">
+                    </div>
+                    <div class="bg-yellow-200 text-red-600 font-bold h-20 text-xl pt-7 pl-5">
+                        DESERTS & OASES
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row mt-20">
+                <div class="bg-cyan-400 flex flex-col px-5 py-10 w-[490px]">
+                    <div class="font-bold text-blue-800 text-xl">Don't Miss</div>
+                    <div class="pt-2 ">SAIL TO EGYPT</div>
+                </div>
+                <div>
+                    <img src="./image/logolive.png">
+                </div>
+
+                <div>
+                    <img class="h-[144px] w-[200px]"
+                        src="https://media.experienceegypt.eg/img/Experience-egyptExperience-egypt.png">
+                </div>
+                <div class="bg-red-500 w-[460px] pt-16 pl-32">
+                    <a class="bg-[#FBE068] text-red-600 px-14  py-6  text-xl" href="#">Learn more ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End : Where to Go -->
+
+    <!--Start : Discover hidden gems -->
+    <div class="flex flex-col mx-72 mt-[550px] ">
+        <div class="font-bold text-xl">
+            DISCOVER
+        </div>
+        <div class="font-bold text-3xl mt-1 hover:text-blue-900">
+            <a href="#">HIDDEN GEMS</a>
+        </div>
+        <div class="flex flex-row justify-center mt-7 gap-2 ">
+            <div>
+                <div>
+                    <img class="h-[300px] w-[350px]"
+                        src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_19_10_34_804.jpg"
+                        alt="img">
+                </div>
+                <div class=" font-bold pt-5">
+                    Luxor Temple at night
+                </div>
+                <div class="text-red-600 pt-2">
+                    Luxor
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="h-[300px] w-[350px]"
+                        src="https://media.experienceegypt.eg/img//Original/2022/6/19/2022_6_19_14_31_10_828.png"
+                        alt="img">
+                </div>
+                <div class=" font-bold pt-5">
+                    Eel Garden
+                </div>
+                <div class="text-red-600 pt-2">
+                    Dahab
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="h-[300px] w-[350px]"
+                        src="https://media.experienceegypt.eg/img//Original/2022/6/19/2022_6_19_17_30_49_149.png"
+                        alt="img">
+                </div>
+                <div class=" font-bold pt-5">
+                    The Blue Lagoon
+                </div>
+                <div class="text-red-600 pt-2">
+                    Abu Galum Protectorate
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="h-[300px] w-[350px]"
+                        src="https://media.experienceegypt.eg/img//Original/2022/6/19/2022_6_19_17_33_37_895.png"
+                        alt="img">
+                </div>
+                <div class=" font-bold pt-5">
+                    The Colored Canyon
+                </div>
+                <div class="text-red-600 pt-2">
+                    Nuweiba
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End : Discover hidden gems -->
+
+
+    <!-- Start : What to do -->
+    <div class="bg-[#FAF1D3] h-[500px] mt-7">
+        <div class="flex flex-col mx-72 ">
+            <div class="font-bold text-3xl hover:text-blue-900 mt-7">
+                <a href="#">WHAT TO DO</a>
+            </div>
+            <div class="mt-2 ">
+                Experience what Egypt has to offer
+            </div>
+            <div class="mt-6">
+                <div class="swiper mySwiper" id="mySwiper2">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide flex flex-col items-start  bg-[#FAF1D3]  h-80 ">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/6/20/2022_6_20_23_32_1_424.jpg"
+                                alt="img">
+                            <div class=" font-bold	mt-2 hover:text-blue-900">SUN & SEA</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start  bg-[#FAF1D3] h-80">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_14_48_17_248.jpg"
+                                alt="img">
+                            <div class=" font-bold mt-2	hover:text-blue-900">ARCHEOLOGICAL SITES</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start  bg-[#FAF1D3]  h-80">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_15_52_50_463.jpg"
+                                alt="img">
+                            <div class=" font-bold mt-2 hover:text-blue-900">SPIRITUAL EGYPT</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start  bg-[#FAF1D3]  h-80">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/6/19/2022_6_19_17_16_19_727.jpg"
+                                alt="img">
+                            <div class=" font-bold mt-2 hover:text-blue-900	">MUSEUMS</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start  bg-[#FAF1D3]  h-80">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/7/21/2022_7_21_1_3_20_870.jpg"
+                                alt="img">
+                            <div class=" font-bold	mt-2 hover:text-blue-900">CRUISING & SAILING</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start bg-[#FAF1D3]  h-80">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_22_4_39_279.jpeg"
+                                alt="img">
+                            <div class=" font-bold	mt-2 hover:text-blue-900">ADVENTURE & OUTDOOR</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start bg-[#FAF1D3]  h-[305px]">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/6/20/2022_6_20_20_1_17_182.jpeg"
+                                alt="img">
+                            <div class=" font-bold mt-2	hover:text-blue-900">ECOTOURISM & NATURE</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start bg-[#FAF1D3]  h-80">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/9/27/2022_9_27_15_37_12_798.jpeg"
+                                alt="img">
+                            <div class=" font-bold mt-2	hover:text-blue-900">HEALTH & WELLNESS</div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-start bg-[#FAF1D3]  h-80">
+                            <img src="https://media.experienceegypt.eg/img//Original/2022/10/5/2022_10_5_14_38_0_121.jpg"
+                                alt="img">
+                            <div class=" font-bold mt-2 hover:text-blue-900">ARTS & CONTEMPORARY CULTURE</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next font-bold text-white"></div>
+                    <div class="swiper-button-prev font-bold text-white"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End : What to do -->
+
+
+    <!-- Start : Insider Pick -->
+    <div class="mx-72">
+        <div class="font-bold text-3xl hover:text-blue-900 mt-8">
+            <a href="#">INSIDER PICKS</a>
+        </div>
+        <div class="flex flex-row gap-5 mt-8">
+            <div>
+                <img class=" h-[134px] w-[320px]"
+                    src="https://media.experienceegypt.eg/img//Original/2022/7/24/2022_7_24_15_24_32_108.png" alt="img">
+                <p class="bg-red-500 text-yellow-200 px-5 py-5 w-[320px] h-[180px] text-lg">
+                    Grab a plate of koshary, one of Egypt’s many vegan-friendly national dishes.
+                </p>
+            </div>
+            <div>
+                <p class="bg-yellow-200 text-red-600 px-5 py-5 w-[320px] h-[180px] text-lg  ">Indulge in a traditional
+                    Egyptian country breakfast of feteer (flaky layered pastry) in Fayoum.</p>
+                <img class=" h-[134px] w-[320px]"
+                    src="https://media.experienceegypt.eg/img//Original/2022/7/7/2022_7_7_17_6_55_933.png" alt="img">
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class=" flex flex-row">
+                    <img class="h-[147px]"
+                        src="https://media.experienceegypt.eg/img//Original/2022/7/7/2022_7_7_17_8_20_928.png"
+                        alt="img">
+                    <p class="bg-cyan-400 text-blue-800 text-lg px-5 py-5  ">Enjoy unforgettable views of the Pyramids
+                        Plateau and other ancient monuments on horseback.</p>
+                </div>
+                <div class=" flex flex-row">
+                    <img class="h-[147px]"
+                        src="https://media.experienceegypt.eg/img//Original/2022/7/7/2022_7_7_17_7_43_519.png"
+                        alt="img">
+                    <p class="bg-blue-900 text-cyan-500 text-lg px-5 py-5   ">Explore villages near the archaeological
+                        sites of Giza for handmade artisanal crafts.</p>
+                </div>
+            </div>
+        </div>
+        <div class=" bg-[#FBE068] mt-8 flex flex-row">
+            <div class="text-blue-900 text-4xl font-bold px-12 py-20">
+                GOOD TO KNOW
+            </div>
+            <div class="flex flex-row gap-5 ml-64">
+                <div class="bg-cyan-400 text-blue-800 px-10 my-5 py-8 flex flex-col items-center">
+                    <img class="h-[50px] w-[40px]" src="https://media.experienceegypt.eg/img/GoodKnow01GoodKnow01.png"
+                        alt="img">
+                    <div class="mt-2 font-bold"> HEALTH SAFETY</div>
+                </div>
+                <div class="bg-blue-900 text-cyan-500 px-14 my-5 py-8 flex flex-col items-center">
+                    <img class="h-[50px] w-[40px]" src="https://media.experienceegypt.eg/img/GoodKnow02GoodKnow02.png"
+                        alt="img">
+                    <div class="mt-2 font-bold">ENTRY VISA</div>
+                </div>
+                <div class="bg-red-500 text-yellow-200  px-14 my-5 py-8 flex flex-col items-center">
+                    <img class="h-[50px] w-[40px]" src="https://media.experienceegypt.eg/img/GoodKnow03GoodKnow03.png"
+                        alt="img">
+                    <div class="mt-2 font-bold"> WEATHER</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End : Insider Pick -->
+
+    <div>
+        <div w3-include-html="footer.html"></div>
+    </div>
+
+    <!-- <forswiper> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper("#mySwiper1", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Swiper -->
+    <script>
+        var swiper = new Swiper("#mySwiper2", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
