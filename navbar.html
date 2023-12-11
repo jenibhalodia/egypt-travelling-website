@@ -1,75 +1,245 @@
-<!-- <nav class="bg-blue-700 shadow-md" x-data="{navbarOpen:false}">
+<nav class=" z-20 flex-col  hidden pb-4 md:pb-0 md:flex     md:flex-row mx-72">
     <div>
-        <ul>
-            <li>
-                <button>
-                    ABOUT EGYPT
-                </button>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+        <img class="h-32 p-3" src="https://www.experienceegypt.eg/images/logo.png">
     </div>
-</nav> -->
-
-<nav class="bg-white" x-data="{navbarOpen:false}">
-    <!-- container -->
-    <div class="container flex flex-wrap  px-4 py-2 mx-auto lg:space-x-4">
-        <!-- brand -->
-
-        <img src="/images/logo.png" alt="" class="img-fluid">
-        <!-- brand -->
-        <!-- toggler btn -->
+    <div class=" group ml-16">
         <button
-            class="inline-flex items-center justify-center w-10 h-10 ml-auto text-white border rounded-md outline-none  lg:hidden focus:outline-none"
-            @click="navbarOpen = !navbarOpen">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            class="flex flex-row items-center w-full text-gray-500	  px-2 py-14 mt-2 text-base font-bold hover:text-blue-900 text-left uppercase bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat">
+            <span>About Egypt</span>
         </button>
-        <!-- toggler btn -->
-        <!-- menu -->
-        <div class="w-full mt-2 lg:inline-flex lg:w-auto lg:mt-0" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
-            <ul class="flex flex-col w-full space-y-2  lg:w-auto lg:flex-row lg:space-y-0 lg:space-x-2">
-                <!-- dropdown -->
-                <li class="relative" x-data="{dropdownOpen:false}">
-                    <button href="#"
-                        class="flex w-full px-4 py-2 font-medium text-stone-500	 rounded-md outline-none  focus:outline-none hover:text-blue-800"
-                        @click="dropdownOpen = !dropdownOpen">
-                        ABOUT EGYPT
-                    </button>
-                    <!-- dropdown menu -->
-                    <div class="right-0 p-2 mt-1 bg-white rounded-md shadow lg:absolute"
-                        :class="{'hidden':!dropdownOpen,'flex flex-col':dropdownOpen}"
-                        @click.away="dropdownOpen = false">
-                        <ul class="space-y-2 lg:w-48">
-                            <li>
-                                <a href="#"
-                                    class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Categories</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Inventories</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Brands</a>
-                            </li>
-                        </ul>
+        <div class="absolute  left-0 flex items-start z-10 hidden  group-hover:block w-[100%] ">
+            <div class=" pt-4  bg-[#F2F3F3] shadow-lg flex flex-row gap-3 ">
+                <div
+                    class=" uppercase bg-blue-900 text-white text-5xl font-bold flex items-center w-[547px] h-[430px] p-20">
+                    the land where it all begins
+                </div>
+                <div class="flex flex-row ">
+                    <div class=" px-2    w-[24%] flex flex-col relative  ">
+                        <img class="h-[415px] object-cover  hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/A unique destination (1)72022281630119.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold">THIS IS EGYPT</p>
                     </div>
-                    <!-- dropdown menu -->
-                </li>
-                <!-- dropdown -->
-              
-            </ul>
+                    <div class=" px-2    w-[24%] flex flex-col relative ">
+                        <img class="   h-[415px]  object-cover hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/WhatsApp Image 2022-07-07 at 5.18.40 PM (1)720227172131960.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold">GEOGRAPHY</p>
+                    </div>
+                    <div class=" px-2    w-[24%] flex flex-col relative ">
+                        <img class="  h-[415px] object-cover hover:brightness-75" src="https://media.experienceegypt.eg/img/About02.png"
+                            alt="img">
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold">HISTORY</p>
+                    </div>
+                    <div class=" px-2    w-[24%] flex flex-col relative ">
+                        <img class="  h-[415px] object-cover hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/About036202219225146701.jpg" alt="img">
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold">LANGUAGE & CULTURE</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- menu -->
     </div>
-    <!-- container -->
+
+
+    <div class="group">
+        <button
+            class="flex flex-row items-center w-full text-gray-500	  px-2 py-14 mt-2 text-base font-bold hover:text-cyan-500 text-left uppercase bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat">
+            <span>Where to go</span>
+        </button>
+        <div class="absolute  left-0 flex items-start z-10 hidden  group-hover:block w-[100%] ">
+            <div class=" pt-4  bg-[#F2F3F3] shadow-lg flex flex-row gap-3 ">
+                <div class=" bg-cyan-500 text-blue-900 text-5xl font-bold flex items-center w-[547px] h-[430px] p-20">
+                    FIND YOUR DREAM DESTINATION
+                </div>
+
+                <div class="flex flex-row ">
+                    <div class=" px-2    w-[24%] flex flex-col relative ">
+                        <a href="./where-to-go/nile.html"> <img class="h-[415px] object-cover hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/2022_7_17_14_11_47_38 (1)7202224131816263.jpg"
+                            alt="img"></a>
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold"><a href="./where-to-go/nile.html">THE NILE</a></p>
+                    </div>
+                    <div class=" px-2    w-[24%] flex flex-col relative ">
+                        <a href="./where-to-go/red-sea.html"> <img class="h-[415px] object-cover hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Corals - the red sea box7202228124742731.jpg"
+                            alt="img"></a>
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold"><a href="./where-to-go/red-sea.html">THE RED SEA</a></p>
+                    </div>
+                    <div class=" px-2    w-[24%] flex flex-col relative ">
+                        <a href="./where-to-go/med.html"> <img class="h-[415px] object-cover hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Shore with more sand - The Med Box720222812364388.jpg"
+                            alt="img"></a>
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold"><a href="./where-to-go/med.html">THE MED</a></p>
+                    </div>
+                    <div class=" px-2    w-[24%] flex flex-col relative ">
+                        <a href="./where-to-go/deserts-oases.html"><img class="h-[415px] object-cover hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Safari - desert and cases box720222813244248.jpg"
+                            alt="img"></a>
+                        <p class=" absolute bottom-10 left-5 text-2xl text-white  font-bold"><a href="./where-to-go/deserts-oases.html">DESERTS & OASES</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="group">
+        <button
+            class="flex flex-row items-center text-gray-500	  w-full px-2 py-14 mt-2 text-base font-bold hover:text-yellow-300 text-left uppercase bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat">
+            <span>What to do</span>
+        </button>
+        <div class="absolute  left-0 flex items-start z-10 hidden  group-hover:block w-[100%] ">
+            <div class=" pt-4  bg-[#F2F3F3] shadow-lg flex flex-row ">
+                <div class=" bg-yellow-300 text-5xl font-bold flex items-center w-[547px] h-[430px] p-20">
+                    GET READY FOR THE EXPERIENCE OF A LIFETIME
+                </div>
+                <div class="flex flex-col w-auto ml-3  ">
+                    <div class=" px-2 flex flex-col relative ">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/2022_6_20_23_32_1_4247202220133059352.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">SUN & SEA</p>
+                    </div>
+                    <div class=" px-2 flex flex-col relative mt-2">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/ahmed - Copy620221916310167202220135750942.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">MUSEUMS</p>
+                    </div>
+                    <div class=" px-2 flex flex-col relative mt-2 ">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Egypt_April2019_Ben_146202220234026944.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">ECOTOURISM & NATURE</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  ">
+                    <div class=" px-2 flex flex-col relative ">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Cover Page - shutterstock_2163977103 (1)7202224131551162.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">ARCHEOLOGICAL SITES</p>
+                    </div>
+                    <div class=" px-2 flex flex-col relative mt-2">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/WhatToDo05620221911485729.jpg" alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">CRUISING & SAILING</p>
+                    </div>
+                    <div class=" px-2 flex flex-col relative mt-2">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Healthandwelneth6202219223443585.jpg" alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">HEALTH & WELLNESS</p>
+                    </div>
+                </div>
+                <div class="flex flex-col ">
+                    <div class=" px-2 flex flex-col relative ">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/unnamed7202228135856907.jpg" alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">SPIRITUAL EGYPT</p>
+                    </div>
+                    <div class=" px-2 flex flex-col relative mt-2">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Egypt_April2019_Chris-23620222023340103.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">ADVENTURE & OUTDOOR</p>
+                    </div>
+                    <div class=" px-2 flex flex-col relative mt-2 mb-3">
+                        <img class="h-[138px] object-cover w-[400px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/shutterstock_ARTS &amp; CONTEMPORARY CULTURE main_693235990 (2) (1)102022514401660.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-3 left-5 text-xl text-white  font-bold">ARTS & CONTEMPORARY CULTURE
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="group">
+        <button
+            class="flex flex-row items-center text-gray-500	  w-ful px-2 py-14 mt-2 text-base font-bold hover:text-blue-900 text-left uppercase bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat">
+            <span>What's on</span>
+        </button>
+        <div class="absolute  left-0 flex items-start z-10 hidden  group-hover:block w-[100%] ">
+            <div class=" pt-4  bg-[#F2F3F3] shadow-lg flex flex-row gap-3 ">
+                <div class=" bg-blue-900 text-white text-5xl font-bold flex items-center w-[547px] h-[430px] p-20">
+                    UPCOMING EVENTS
+                </div>
+
+                <div class="flex flex-row ">
+                    <div class=" px-2    flex flex-col relative ">
+                        <img class="h-[415px] object-cover  w-[550px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/2022_7_6_22_2_8_10932023518023455.jpg" alt="img">
+                        <p class=" absolute bottom-10 left-5 text-xl text-white  font-bold">WORLD CHILDREN'S DAY</p>
+                        <div
+                            class="font-bold bg-yellow-300 text-blue-900 h-20 w-20 absolute top-0 left-8 flex flex-col justify-center items-center">
+                            <a class="text-3xl" href="#">29</a>
+                            <div>jun</div>
+                        </div>
+                    </div>
+                    <div class=" px-2    flex flex-col relative ">
+                        <img class="h-[415px] object-cover  w-[550px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/2022_8_7_23_36_35_159320235181030769.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-10 left-5 text-base text-white  font-bold">Solar Alignment in the Abu
+                            Simbel Temple in Aswan</p>
+                        <div
+                            class="font-bold bg-yellow-300 text-blue-900 h-20 w-20 absolute top-0 left-8 flex flex-col justify-center items-center">
+                            <a class="text-3xl" href="#">22</a>
+                            <div>Oct</div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                class="w-14 h-14 bg-blue-900 text-white mt-[360px]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="   bg-[#F2F3F3] shadow-lg flex flex-row gap-3 ">
+                <div class=" bg-yellow-300 text-blue-900 text-5xl font-bold flex items-center w-[547px] h-[200px] p-20">
+                    EYE ON EGYPT
+                </div>
+                <div class="flex flex-row">
+                    <div class=" px-2    flex flex-col relative ">
+                        <img class="h-[200px] object-cover  w-[550px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/Colossi-of-Memnon-Near-Luxor (1)6202219155618176.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-7 left-5 text-base text-white  font-bold">Visiting the Temples of
+                            Luxor? Stop by The Colossi of Memnon</p>
+                    </div>
+                    <div class=" px-2    flex flex-col relative mb-3">
+                        <img class="h-[200px] object-cover  w-[550px] hover:brightness-75"
+                            src="https://media.experienceegypt.eg/img/pyramids-g90557d355_1280-750x430620221915584530.jpg"
+                            alt="img">
+                        <p class=" absolute bottom-5 left-5 text-base text-white  font-bold">Culture and Beach Hoildays
+                            in Egypt</p>
+                    </div>
+                    <div>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                class="w-14 h-14 bg-yellow-300 text-blue-900 mt-36">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </nav>

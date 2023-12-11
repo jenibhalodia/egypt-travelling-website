@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- The Med</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover"
+            src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_28_42_326.jpeg" alt="img">
+    </div>
+    <div class="bg-[#FBF0D3] h-64 ">
+        <div class="mx-72 pt-8 text-gray-500 font-bold">
+            <a class="hover:text-black" href="../index.html">Home</a>/ The Med
+        </div>
+        <div class="text-3xl font-bold mx-72 mt-5">The Med </div>
+
+        <div class="mx-72  mt-14 flex flex-row">
+            <div class="hover:bg-[#FBC461]	p-2 h-[604px]">
+                <img class="h-[365px] w-[424px] object-cover "
+                    src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_27_31_356.jpeg" alt="img">
+                <div class=" text-xl font-bold mt-3">
+                    Alexandria
+                </div>
+                <div class="mt-4 w-[424px]">
+                    Egypt’s metropolitan city on the Mediterranean
+                </div>
+                <div class="mt-[105px]">
+                    <a class="hover:text-red-600 hover:bg-yellow-300  border-[1px]  border-gray-600	 px-3 py-4 "
+                        href="#">Learn more ></a>
+                </div>
+            </div>
+            <div class="hover:bg-[#FBC461]	p-2 ">
+                <img class="h-[365px] w-[424px] object-cover "
+                    src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_17_34_15_768.jpeg" alt="img">
+                <div class=" text-xl font-bold mt-3">
+                    North Coast & Al-Alamein
+                </div>
+                <div class="mt-4 w-[424px]">
+                    White sandy beaches and stunning turquoise waters make this Egypt’s go-to summer vacation destination
+                </div>
+                <div class="mt-20">
+                    <a class="hover:text-red-600 hover:bg-yellow-300  border-[1px]  border-gray-600	 px-3 py-4 "
+                        href="#">Learn more ></a>
+                </div>
+            </div>
+            <div class="hover:bg-[#FBC461]	p-2">
+                <img class="h-[365px] w-[424px] object-cover"
+                    src="https://media.experienceegypt.eg/img//Original/2022/7/12/2022_7_12_7_43_8_627.jpeg" alt="img">
+                <div class=" text-xl font-bold mt-3">
+                    Marsa Matrouh
+                </div>
+                <div class="mt-4 w-[424px]">
+                    Egypt’s classic summer getaway
+                </div>
+                <div class="mt-[105px]">
+                    <a class="hover:text-red-600 hover:bg-yellow-300  border-[1px]  border-gray-600	 px-3 py-4 "
+                        href="#">Learn more ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start : Footer -->
+    <div class="mt-[545px]" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

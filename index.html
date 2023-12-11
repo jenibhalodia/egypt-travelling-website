@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egypt tarvel</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         function includeHTML() {
             var z, i, elmnt, file, xhttp;
@@ -72,15 +73,17 @@
             object-fit: cover;
         }
     </style>
-   
+
 
 </head>
 
 <body>
-    <div w3-include-html="navbar.html"></div>
+    <!-- Start : Navbar -->
+    <div w3-include-html="./navbar.html"></div>
     <script>
         includeHTML();
     </script>
+    <!-- End : Navbar -->
 
     <!-- Start : Corosoul -->
     <div class="swiper mySwiper w-full h-[800px]" id="mySwiper1">
@@ -133,52 +136,52 @@
             <div class="flex flex-row justify-center mt-5 ">
                 <div>
                     <div>
-                        <img class="h-[324px] w-[390px]"
+                        <a  href="./where-to-go/nile.html"><img class="h-[324px] w-[390px] object-cover"
                             src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_24_45_511.jpeg"
-                            alt="img">
+                            alt="img"></a>
                     </div>
                     <div class="bg-blue-900 text-cyan-500 font-bold h-20 text-xl pt-7 pl-5">
-                        THE NILE
+                       <a href="./where-to-go/nile.html">THE NILE</a> 
                     </div>
                 </div>
                 <div>
                     <div>
-                        <img class="h-[324px] w-[390px]"
+                        <a href="./where-to-go/red-sea.html"> <img class="h-[324px] w-[390px] object-cover"
                             src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_27_31_403.jpeg"
-                            alt="img">
+                            alt="img"></a>
                     </div>
                     <div class="bg-red-500 text-yellow-200 font-bold h-20 text-xl pt-7 pl-5">
-                        THE RED SEA
+                        <a href="./where-to-go/red-sea.html">THE RED SEA</a> 
                     </div>
                 </div>
                 <div>
                     <div>
-                        <img class="h-[324px] w-[390px]"
+                        <a href="./where-to-go/med.html"> <img class="h-[324px] w-[390px] object-cover"
                             src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_28_42_326.jpeg"
-                            alt="img">
+                            alt="img"></a>
                     </div>
                     <div class="bg-cyan-400 text-blue-800 font-bold h-20 text-xl pt-7 pl-5">
-                        THE MED
+                       <a href="./where-to-go/med.html">THE MED</a> 
                     </div>
                 </div>
                 <div>
                     <div>
-                        <img class="h-[324px] w-[390px]"
+                       <a href="./where-to-go/deserts-oases.html"><img class="h-[324px] w-[390px] object-cover"
                             src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_18_29_43_278.jpeg"
-                            alt="img">
+                            alt="img"></a>
                     </div>
                     <div class="bg-yellow-200 text-red-600 font-bold h-20 text-xl pt-7 pl-5">
-                        DESERTS & OASES
+                       <a href="./where-to-go/deserts-oases.html"> DESERTS & OASES</a>
                     </div>
-                </div>
+                </div>  
             </div>
             <div class="flex flex-row mt-20">
                 <div class="bg-cyan-400 flex flex-col px-5 py-10 w-[490px]">
                     <div class="font-bold text-blue-800 text-xl">Don't Miss</div>
-                    <div class="pt-2 ">SAIL TO EGYPT</div>
+                    <div class="pt-2 "><a href="https://www.experienceegypt.eg/files/SailToEgypt.pdf">SAIL TO EGYPT</a></div>
                 </div>
                 <div>
-                    <img src="./image/logolive.png">
+                    <img class="object-cover" src="https://www.experienceegypt.eg/images/logolive.png">
                 </div>
 
                 <div>
@@ -186,7 +189,7 @@
                         src="https://media.experienceegypt.eg/img/Experience-egyptExperience-egypt.png">
                 </div>
                 <div class="bg-red-500 w-[460px] pt-16 pl-32">
-                    <a class="bg-[#FBE068] text-red-600 px-14  py-6  text-xl" href="#">Learn more ></a>
+                    <a class="bg-[#FBE068] text-red-600 px-14  py-6  text-xl" href="https://www.experienceegypt.eg/files/SailToEgypt.pdf">Learn more ></a>
                 </div>
             </div>
         </div>
@@ -204,7 +207,7 @@
         <div class="flex flex-row justify-center mt-7 gap-2 ">
             <div>
                 <div>
-                    <img class="h-[300px] w-[350px]"
+                    <img class="h-[300px] w-[350px] object-cover"
                         src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_19_10_34_804.jpg"
                         alt="img">
                 </div>
@@ -217,7 +220,7 @@
             </div>
             <div>
                 <div>
-                    <img class="h-[300px] w-[350px]"
+                    <img class="h-[300px] w-[350px] object-cover"
                         src="https://media.experienceegypt.eg/img//Original/2022/6/19/2022_6_19_14_31_10_828.png"
                         alt="img">
                 </div>
@@ -230,7 +233,7 @@
             </div>
             <div>
                 <div>
-                    <img class="h-[300px] w-[350px]"
+                    <img class="h-[300px] w-[350px] object-cover"
                         src="https://media.experienceegypt.eg/img//Original/2022/6/19/2022_6_19_17_30_49_149.png"
                         alt="img">
                 </div>
@@ -243,7 +246,7 @@
             </div>
             <div>
                 <div>
-                    <img class="h-[300px] w-[350px]"
+                    <img class="h-[300px] w-[350px] object-cover"
                         src="https://media.experienceegypt.eg/img//Original/2022/6/19/2022_6_19_17_33_37_895.png"
                         alt="img">
                 </div>
@@ -272,9 +275,9 @@
                 <div class="swiper mySwiper" id="mySwiper2">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide flex flex-col items-start  bg-[#FAF1D3]  h-80 ">
-                            <img src="https://media.experienceegypt.eg/img//Original/2022/6/20/2022_6_20_23_32_1_424.jpg"
-                                alt="img">
-                            <div class=" font-bold	mt-2 hover:text-blue-900">SUN & SEA</div>
+                            <a href="./what-to-do/sun-&-sea.html"><img src="https://media.experienceegypt.eg/img//Original/2022/6/20/2022_6_20_23_32_1_424.jpg"
+                                alt="img"></a>
+                            <div class=" font-bold	mt-2 hover:text-blue-900"><a href="./what-to-do/sun-&-sea.html">SUN & SEA</a></div>
                         </div>
                         <div class="swiper-slide flex flex-col items-start  bg-[#FAF1D3] h-80">
                             <img src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_14_48_17_248.jpg"
@@ -387,11 +390,11 @@
     </div>
     <!-- End : Insider Pick -->
 
-    <div>
-        <div w3-include-html="footer.html"></div>
-    </div>
+    <!-- Start : Footer -->
+    <div w3-include-html="./footer.html"></div>
+    <!-- End : Footer -->
 
-    <!-- <forswiper> -->
+    <!-- <for main swiper> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper("#mySwiper1", {
@@ -412,7 +415,7 @@
         });
     </script>
 
-    <!-- Swiper -->
+    <!-- Swiper for what to do section -->
     <script>
         var swiper = new Swiper("#mySwiper2", {
             slidesPerView: 4,
