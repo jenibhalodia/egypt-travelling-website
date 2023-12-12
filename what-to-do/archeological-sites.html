@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- ARCHEOLOGICAL SITES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover"
+            src="https://media.experienceegypt.eg/img//Original/2022/6/20/2022_6_20_23_32_1_424.jpg" alt="img">
+    </div>
+    <div class="mx-72 pt-8 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ ARCHEOLOGICAL SITES
+    </div>
+
+    <div class="mx-72 mt-5">
+        <p class="font-bold text-2xl">Explore the world’s most famous antiquities</p>
+        <p class="mt-2">Egypt’s rich and diverse history spans thousands of years, from across the most important
+            periods of ancient civilization into a flourishing contemporary era. Journey back in time to explore and
+            admire sites and monuments from ancient Egypt to the Graeco-Roman periods, then fast forward to when
+            Judaism, Christianity, and Islam influenced Egypt’s rich culture and heritage.</p>
+        <p class="mt-2"> Visiting the monuments erected by the strikingly sophisticated people of ancient civilizations
+            will give you remarkable insight into early systems of governance, religious rites, military conquests,
+            complex record-keeping, ingenious architecture, and, of course, spectacular art that continues to inspire
+            the worlds of design, literature, music, and all forms of artistic expression to this day. What’s even more
+            miraculous is that many ancient Egyptian monuments are still standing and in remarkably good condition.</p>
+        <p class="mt-2">It’s almost impossible to visit a destination in Egypt that doesn’t have lasting evidence of the
+            country’s rich past, with layers of history that take spectators on a journey up to the present day. Our
+            museums, old and new, are also filled with priceless treasures spanning thousands of years of history.
+            There’s a lot of historical ground to cover, so make a list and start ticking off your must-sees!I</p>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">Explore 7 UNESCO World Heritage Sites</div>
+            <p class="mt-5">Egypt is home to seven spectacular UNESCO World Heritage Sites, where visitors can</p>
+            <p class="mt-2"> immerse themselves in ancient cultural legacy protected throughout the ages.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_14_50_5_786.jpg" alt="img">
+        </div>
+    </div>
+    <div class="mx-72 relative h-[526px] mt-20">
+        <div class="flex flex-col absolute right-32">
+            <div class="font-bold text-4xl">Ancient Egyptian Heritage</div>
+            <p class="mt-5 ">Explore the UNESCO World Heritage site of Memphis and its necropolises, including the</p>
+            <p class="mt-2 ">Pyramids of Giza, Saqqara, and Dahshur.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/10/2/2022_10_2_18_40_31_106.jpeg" alt="img">
+        </div>
+    </div>
+    
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">Graeco-Roman Heritage </div>
+            <p class="mt-5">A new era of political and cultural importance swept over Egypt with the arrival of
+                Alexander the </p>
+            <p class="mt-2">Great’s forces in 332 BC.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/9/28/2022_9_28_21_3_25_131.jpg" alt="img">
+        </div>
+    </div>
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

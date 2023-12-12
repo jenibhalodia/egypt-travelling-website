@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- ARTS & CONTEMPORARY CULTURE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover"
+            src="https://media.experienceegypt.eg/img//Original/2022/10/5/2022_10_5_14_38_0_121.jpg" alt="img">
+    </div>
+    <div class="mx-72 pt-8 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ ARTS & CONTEMPORARY CULTURE
+    </div>
+
+    <div class="mx-72 mt-5">
+        <p class="font-bold text-2xl">Explore Egypt’s rich and prolific modern culture</p>
+        <div class="mt-2 ">Egypt has been home to many of the world’s most powerful and influential civilizations.
+            Multiculturalism runs deep within the country’s heart and soul, producing a unique fusion of stunning art,
+            from the vivid wall paintings of ancient Egypt to iridescent stained glass church windows, intricately
+            decorated mosque domes, and captivating abstract sculptures and paintings by renowned contemporary artists.
+        </div>
+        <div>
+            Also known as the “Hollywood of the Middle East,” Egypt has forged a rich and prolific history in theater
+            and film production. Egypt was, and remains, the go-to destination for aspiring actors, producers, and
+            cinematographers of the region. Um Kalthoum, Abdel Halim Hafez, and Omar Khairat are only a few of the
+            legendary musicians, singers, and composers idolized in the Middle East and beyond.
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">Cairo Opera House</div>
+            <p class="mt-5">Located in the affluent Zamalek district, the Cairo Opera House was established in 1988 and
+                serves as</p>
+            <p class="mt-2"> a hub for musical and artistic talent from all over the country.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/20/2022_7_20_4_20_45_690.jpeg" alt="img">
+        </div>
+    </div>
+    <div class="mx-72 relative h-[526px] mt-20">
+        <div class="flex flex-col absolute right-0">
+            <div class="font-bold text-4xl">Galleries, Exhibitions, & Modern Art Museums</div>
+            <p class="mt-5 ">For a taste of contemporary Egyptian art, visit a local gallery or exhibition and explore
+                the country’s </p>
+            <p class="mt-2 ">captivating art scene.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_21_50_9_117.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">Theater, Film, & Music Festivals</div>
+            <p class="mt-5">Egyptians are well-known for their sense of humor and use of witty puns, half of which can
+                be </p>
+            <p class="mt-2"> attributed to beloved Egyptian comedy plays.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_21_51_5_111.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20">
+        <div class="font-bold">
+            DISCOVER
+        </div>
+        <div class="font-bold text-4xl mt-2">Hidden Gems</div>
+        <div class="flex flex-row gap-5">
+            <div class="mt-7 flex flex-col">
+                <div>
+                    <img class="w-[412px] h-[315px] rounded-lg"
+                        src="https://media.experienceegypt.eg/img//Original/2022/10/3/2022_10_3_18_4_4_394.jpg"
+                        alt="img">
+                </div>
+                <div class="w-[412px] mt-3">
+                    The historic Cairo neighborhood of Zamalek is a hub for contemporary artists from all over the
+                    country. This small island is home to many significant art and culture institutions, such as the
+                    Cairo Opera House and the Al Sawy Culturewheel. By taking a stroll around the tree-lined streets of
+                    Zamalek, you’ll find fascinating art galleries scattered all over the neighborhood, showcasing the
+                    works of some of the country’s finest contemporary artists.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

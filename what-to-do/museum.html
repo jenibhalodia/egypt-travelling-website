@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- MUSEUMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover"
+            src="https://media.experienceegypt.eg/img//Original/2022/8/7/2022_8_7_15_52_50_463.jpg" alt="img">
+    </div>
+    <div class="mx-72 pt-8 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ MUSEUMS
+    </div>
+
+    <div class="mx-72 mt-5">
+        <p class="font-bold">Enjoy year-round sunshine, warm weather, and unforgettable shades of blue sea</p>
+        <p class="mt-2">Endless sunshine and warm temperatures throughout the year make Egypt the ideal destination for
+            those beach holidays you crave! Whether you are looking for large all-inclusive</p>
+        <p class="mt-2"> resorts, romantic getaways at boutique hotels, secluded campsites, action
+            filled adventures, or a summer beach rental, Egypt has what you are looking for. Come and explore the many
+        </p>
+        <p class="mt-2">escapes on offer with plenty of beach, water sports,
+            nightlife, and relaxation for people of all tastes to enjoy.</p>
+    </div>
+
+    <div class="mx-72 text-5xl font-bold mt-20">Cairo & Giza:</div>
+
+    <div class="mx-72 mt-16 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">The Egyptian Museum</div>
+            <p class="mt-5">The Egyptian Museum in Cairo is the oldest archaeological museum in the MENA region and a
+                must-see</p>
+            <p class="mt-2"> during any visit to Cairo.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/8/11/2022_8_11_16_55_56_799.jpeg" alt="img">
+        </div>
+    </div>
+    <div class="mx-72 relative h-[526px] mt-20">
+        <div class="flex flex-col absolute right-60">
+            <div class="font-bold text-4xl">The Museum of Islamic Art</div>
+            <p class="mt-5 ">The Museum of Islamic Art is the largest museum of its kind in the world.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/8/11/2022_8_11_16_57_9_374.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 text-5xl font-bold mt-20">Alexandria :</div>
+
+    <div class="mx-72 mt-16 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">The Alexandria National Museum</div>
+            <p class="mt-5">The Alexandria National Museum exhibits more than 1,800 artifacts from early Dynastic</p>
+            <p class="mt-2">Egypt to the Graeco-Roman periods, as well as the Coptic and Islamic eras, including rare salvaged </p>
+            <p class="mt-2">underwater artifacts.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/8/11/2022_8_11_17_7_9_30.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px]  ">
+        <div class="flex flex-col absolute right-14">
+            <div class="font-bold text-4xl ">The Royal Jewelry Museum</div>
+            <p class="mt-5">Displaying the collectibles of the former Egyptian Royal Family, the Royal Jewelry Museum houses </p>
+            <p class="mt-2">  precious jewelry, paintings, mosaics, and valuable items from the Muhammad Ali dynasty</p>
+            <p class="mt-2"> that ruled Egypt from 1805 until 1952.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/8/11/2022_8_11_17_8_14_210.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 text-5xl font-bold mt-20">Red Sea:</div>
+    <div class="mx-72 mt-16 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">The Sharm al-Sheikh Museum</div>
+            <p class="mt-5">The Sharm al-Sheikh Museum is South Sinai’s first antiquities museum, containing around 5,200</p>
+            <p class="mt-2"> artifacts documenting the rise of Egyptian civilization.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/8/8/2022_8_8_20_20_43_310.jpeg" alt="img">
+        </div>
+    </div>
+
+
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- CRUISING & SAILING</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover"
+            src="https://media.experienceegypt.eg/img//Original/2022/7/21/2022_7_21_1_3_20_870.jpg" alt="img">
+    </div>
+    <div class="mx-72 pt-8 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ CRUISING & SAILING
+    </div>
+
+    <div class="mx-72 mt-5">
+        <p class="font-bold text-2xl">Journey through time on the Nile and explore the beauty of Egypt’s seas</p>
+        <div class="mt-2">Egypt is a country that has always honored the Nile. Add to that two glittering coastlines on the Red Sea
+            and the Mediterranean, abundant sunshine, a temperate climate, and it’s no surprise that Egypt is an ideal
+            destination for cruising and sailing. In Cairo, floating restaurants and traditional sailboats, or feluccas
+            are a fun way to see the city lights or take in the sunset. Further south, there is no better way to explore
+            the sites of ancient Egypt than onboard a Nile cruise. And no visit to the Red Sea would be complete without
+            a day spent on a boat to dive, snorkel, fish, or simply relax and take in the sunshine on deck. River or
+            sea, there’s plenty to do offshore in Egypt!
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">Nile Cruises</div>
+            <p class="mt-5">Discover the beauty of the Nile and explore ancient Egypt while floating down the river onboard a  </p>
+            <p class="mt-2">classic Nile cruise.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/21/2022_7_21_18_58_1_933.jpeg" alt="img">
+        </div>
+    </div>
+    <div class="mx-72 relative h-[526px] mt-20">
+        <div class="flex flex-col absolute right-20">
+            <div class="font-bold text-4xl">Dahabeyas</div>
+            <p class="mt-5 ">Want to cruise the Nile but prefer a more intimate, luxurious, and exclusive experience? You</p>
+            <p class="mt-2 ">can charter a private Dahabeya to sail between Luxor and Aswan, and stop at your leisure</p>
+            <p class="mt-2 ">at places off the beaten path.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/21/2022_7_21_18_57_29_773.jpeg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">Yachting & Sailing </div>
+            <p class="mt-5">Head out for adventure-filled days on the water, exploring Egypt’s seas and shorelines from a </p>
+            <p class="mt-2">sailboat or yacht! On the Red Sea, boat trips are a highlight not to be missed.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/9/28/2022_9_28_21_3_25_131.jpg" alt="img">
+        </div>
+    </div>
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

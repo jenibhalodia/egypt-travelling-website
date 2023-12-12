@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- HEALTH & WELLNESS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover"
+            src="https://media.experienceegypt.eg/img//Original/2022/9/27/2022_9_27_15_37_12_798.jpeg" alt="img">
+    </div>
+    <div class="mx-72 pt-8 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ HEALTH & WELLNESS
+    </div>
+
+    <div class="mx-72 mt-5">
+        <p class="font-bold text-2xl">Bask in the healing properties of the Egyptian sun, sand, and sea</p>
+        <div class="mt-2 ">While Egypt is best known for its antiquities and beaches, visitors will find that the
+            country has much to offer as a destination for health and wellness. In fact, alternative medical practices,
+            like aromatherapy and reflexology, date back to ancient Egypt. The climate in Egypt also makes it an ideal
+            place to escape cold winters and bask in the healing properties of the sun, sand, and sea. In the cities,
+            near the sea and in our desert oases, you can find luxury spas, yoga and nature retreats, fitness centers,
+            wellness cruises, therapeutic treatments, and organic products that will help you relax and rejuvenate.
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">In Cairo</div>
+            <p class="mt-5">Nestled within the bustling metropolis of Cairo, you can find wellness centers and spas with
+                all the </p>
+            <p class="mt-2">pampering and wellness amenities that you need.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_20_49_39_717.jpeg" alt="img">
+        </div>
+    </div>
+    <div class="mx-72 relative h-[526px] mt-20">
+        <div class="flex flex-col absolute right-20">
+            <div class="font-bold text-4xl">By the Red Sea</div>
+            <p class="mt-5 ">The Red Sea’s famous turquoise waters have a 35% higher than average saline concentration,
+                so </p>
+            <p class="mt-2 ">swimming isn’t just fun: it comes with wellness benefits.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_20_48_31_591.jpeg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20 relative h-[526px] ">
+        <div class="flex flex-col">
+            <div class="font-bold text-4xl ">Ancient Healing Practices</div>
+            <p class="mt-5">If you’re more of a naturalist, forget about the fancy hotels and treatments and indulge in
+                one of Egypt’s </p>
+            <p class="mt-2"> ancient, traditional healing practices.</p>
+        </div>
+        <div>
+            <img class="h-[526px] w-[526px] object-cover  absolute top-0 right-0 "
+                src="https://media.experienceegypt.eg/img//Original/2022/7/21/2022_7_21_0_50_14_793.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20">
+        <div class="font-bold">
+            DISCOVER
+        </div>
+        <div class="font-bold text-4xl mt-2">Hidden Gems</div>
+        <div class="flex flex-row gap-5">
+            <div class="mt-7 flex flex-col">
+                <div>
+                    <img class="w-[412px] h-[315px] rounded-lg"
+                        src="https://media.experienceegypt.eg/img//Original/2022/7/21/2022_7_21_0_53_37_746.jpg"
+                        alt="img">
+                </div>
+                <div class="w-[412px] mt-3">
+                    Book a weekend of pampering at Soma Bay’s Thalasso Spa to experience the healing properties of the
+                    Red Sea water.
+                </div>
+            </div>
+            <div class="mt-7 flex flex-col">
+                <div>
+                    <img class="w-[412px] h-[315px] rounded-lg"
+                        src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_21_11_25_787.jpeg"
+                        alt="img">
+                </div>
+                <div class="w-[412px] mt-3">
+                    <p class="card-text text-start titleHiddenCity">
+                        Take time out for a relaxing deep tissue massage in hotels or near the beach
+                    </p>
+                </div>
+            </div>
+            <div class="mt-7 flex flex-col">
+                <div>
+                    <img class="w-[412px] h-[315px] rounded-lg"
+                        src="https://media.experienceegypt.eg/img//Original/2022/7/23/2022_7_23_21_10_15_725.jpeg"
+                        alt="img">
+                </div>
+                <div class="w-[412px] mt-3">
+                    Stock up on Egyptian-made essential oils and bath products available at many specialty gift stores
+                    at hotels, resorts, and in different neighborhoods around Cairo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

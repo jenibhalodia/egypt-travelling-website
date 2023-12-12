@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- This is Egypt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover"
+            src="https://media.experienceegypt.eg/img/A unique destination (1)72022281630119.jpg" alt="img">
+    </div>
+    <div class="mx-72 pt-14 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ This is Egypt
+    </div>
+    <div class="mx-72 text-6xl font-bold mt-8">ABOUT EGYPT</div>
+
+    <div class="mx-72 mt-14">
+        <p class="font-bold text-2xl text-blue-800">Discover the Warmth of Egypt & Make Lifelong Memories</p>
+        <div class="mt-5">A life well-travelled cannot be considered complete without at least one visit to Egypt! Egypt
+            isn’t just home to the oldest and best-preserved historical sites on earth, the country offers diverse
+            holiday experiences catered to your travel preferences. You can enjoy an immersive urban experience in Cairo
+            and Alexandria, discover some of the best snorkeling and scuba diving sites in the world in the Red Sea, get
+            a taste of life on the Nile on personalized Nile cruises, or curate your own desert adventure. The energy,
+            hospitality, and good humor of the Egyptian people are at the heart of any visit to Egypt, with sunny smiles
+            etched onto the faces of nearly every person you will encounter. Expect multiple offers for homecooked
+            meals, invites to weddings and parties, and a chance to make new friends as warm as the golden Egyptian sun.
+        </div>
+    </div>
+
+    <div class="bg-[#FAF0D2] h-96 mt-12">
+        <div class="mx-72 flex flex-row justify-center gap-2">
+            <div class="flex flex-col mt-16">
+                <img class="h-[300px] w-[300px] object-cover" src="https://www.experienceegypt.eg/images/About01.png"
+                    alt="img">
+                <div class="w-[300px] h-44  bg-blue-900 text-white p-4">
+                    <strong class="mt-2"> Geography</strong>
+                    <p class="mt-1 text-sm">From the River Nile to the splendor of our vast deserts, and from the
+                        glistening waters at beaches to the rugged mountains, discover what the diverse
+                        landscapes of Egypt have to offer.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-16">
+                <img class="h-[300px] w-[300px] object-cover" src="https://www.experienceegypt.eg/images/About02.png"
+                    alt="img">
+                <div class="w-[300px] h-44 bg-[#FF543F] text-white p-4">
+                    <strong class="mt-2"> History</strong>
+                    <p class="mt-1 text-sm">You’ve heard about the Great Pyramids of Giza, but Egypt has much more
+                        magic and mystique to offer. The vastness and diversity of our history will inspire you.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-16">
+                <img class="h-[300px] w-[300px] object-cover" src="https://www.experienceegypt.eg/images/About03.png"
+                    alt="img">
+                <div class="w-[300px] h-44 bg-[#01CFCF] text-white p-4">
+                    <strong class="mt-2">Population, Language & Culture</strong>
+                    <p class="mt-1 text-sm">The first thing you will notice is the warmth and hospitality of our
+                        people. Come and discover the richness of our way of
+                        life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-3xl mx-72 font-bold mt-48">
+        Fun Facts
+    </div>
+
+    <div class="flex flex-col mx-72 gap-2">
+        <div class="flex flex-row mt-5 gap-2">
+            <div class="flex flex-col bg-[#FFF5E1] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon01.svg" alt="img">
+                <div class="text-lg font-bold">103 million</div>
+                <div class="mt-1">the population of Egypt with youth representing around 60%</div>
+            </div>
+            <div class="flex flex-col bg-[#E1E6FB] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon07.svg" alt="img">
+                <div class="text-lg font-bold">3,800 +</div>
+                <div class="mt-1">hours of sun/year</div>
+            </div>
+            <div class="flex flex-col bg-[#FEEDEB] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon03.svg" alt="img">
+                <div class="text-lg font-bold">21 million +</div>
+                <div class="mt-1">the population of Cairo, one of the world’s largest cities</div>
+            </div>
+            <div class="flex flex-col bg-[#DEF5F6] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon08.svg" alt="img">
+                <div class="text-lg font-bold">2,629 m</div>
+                <div class="mt-1">the height of Mount Catherine in Sinai, the highest point in Egypt</div>
+            </div>  
+        </div>
+        <div class="flex flex-row gap-2">
+            <div class="flex flex-col bg-[#DEF5F6] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon02.svg" alt="img">
+                <div class="text-lg font-bold">3,800 sq km</div>
+                <div class="mt-1">of coral reefs in Egypt’s Red Sea</div>
+            </div>
+            <div class="flex flex-col bg-[#FFF5E1] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon04.svg" alt="img">
+                <div class="text-lg font-bold">7,000 sq km</div>
+                <div class="mt-1">of marine protected areas</div>
+            </div>
+            <div class="flex flex-col bg-[#DEF5F6] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon05.svg" alt="img">
+                <div class="text-lg font-bold">2,900 km</div>
+                <div class="mt-1">of coastline</div>
+            </div>
+            <div class="flex flex-col bg-[#FEEDEB] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px] object-cover" src="https://img.icons8.com/?size=48&id=18046&format=png" alt="img">
+                <div class="text-lg font-bold">525 ha</div>
+                <div class="mt-1">of mangrove forests</div>
+            </div>
+        </div>
+        <div class="flex flex-row gap-2">
+            <div class="flex flex-col bg-[#FEEDEB] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon06.svg" alt="img">
+                <div class="text-lg font-bold">750 +</div>
+                <div class="mt-1">species of fish in Egypt’s waters</div>
+            </div>
+            <div class="flex flex-col bg-[#E1E6FB] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon09-red.svg" alt="img">
+                <div class="text-lg font-bold">490 +</div>
+                <div class="mt-1">Species of birds in Egypt</div>
+            </div>
+            <div class="flex flex-col bg-[#DEF5F6] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon09.svg" alt="img">
+                <div class="text-lg font-bold">300 - 350</div>
+                <div class="mt-1">species of migrating birds throughout the year</div>
+            </div>
+            <div class="flex flex-col bg-[#FFF5E1] w-80 h-64 p-5">
+                <img class="h-[94px] w-[94px]" src="https://www.experienceegypt.eg/images/icon10.svg" alt="img">
+                <div class="text-lg font-bold">93%</div>
+                <div class="mt-1">of the total land area of Egypt is desert</div>
+            </div>
+        </div>
+    </div>
+    <!-- Start : Footer -->
+    <div class="mt-6" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>
