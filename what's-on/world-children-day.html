@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- World-Children-Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <hr>
+    <div class="mx-72 pt-7 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ World-Children-Day
+    </div>
+    <div class="mx-72 bg-[#EBEEF6] h-44 mt-5 relative">
+        <div
+            class="font-bold bg-blue-900 text-[#FECD66] h-20 w-16 absolute top-0 right-5 flex flex-col justify-center items-center">
+            <a class="text-xl" href="#">29</a>
+            <div class="text-sm">jun</div>
+        </div>
+        <div class="p-6">
+            <div class="text-4xl">WORLD CHILDREN’S DAY</div>
+            <div class="flex flex-row mt-2">Festival
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                <div class="text-sm mt-1">Cairo</div>
+            </div>
+            <div class="mt-5 flex flex-row">
+                <strong class="text-gray-500">Event Date</strong>
+                <div class="text-sm ml-2 mt-1">29 Jun 2023</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-9 mx-72">
+        <img class="h-[730px] w-full object-cover "
+            src="https://media.experienceegypt.eg/img//Original/2022/7/6/2022_7_6_22_2_8_109.jpg" alt="img">
+    </div>
+
+    <div class="mx-72 mt-7">
+        World Children’s Day was first celebrated in 1959 to remember the difficult situations faced by children
+        worldwide, including violence, poverty, life as refugees, and child labor. This year, the Ministry of Tourism
+        and Antiquities is dedicating World Children’s Day to raising awareness of children’s rights through hosting
+        educational workshops for children about Egyptian traditions.
+    </div>
+    <div class="text-3xl font-bold mx-72 mt-9">
+        Event information
+    </div>
+    <div class="mx-72 mt-7 flex flex-row">
+        <div class="font-bold text-xl">Location</div> 
+        <div class="ml-10">Cairo</div>
+    </div>
+    <div class="mx-72 mt-7 flex flex-row">
+        <div class="font-bold text-xl">Event dates</div> 
+        <div class="ml-3">Start date :</div>
+        <div class="ml-1">29 Jun 2023</div>
+    </div>
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

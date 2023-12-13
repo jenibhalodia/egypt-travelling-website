@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- HISTORY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover" src="https://www.experienceegypt.eg/images/history.jpeg" alt="img">
+    </div>
+    <div class="mx-72 pt-14 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ HISTORY
+    </div>
+    <div class="mx-72 text-6xl font-bold mt-8">A TIME TRAVELER’S PARADISE</div>
+
+    <div class="mx-72 mt-12">With seven UNESCO World Heritage sites and jaw-dropping historical destinations, no matter
+        where you go in
+        Egypt, you are bound to find history bursting at the seams! There’s so much more to see than just pyramids, so
+        get ready to travel through time.</div>
+
+    <div class="mx-72 mt-12">
+        <p class="font-bold text-2xl text-blue-800">Explore Ancient Egyptian Wonders</p>
+        <div class="mt-10">Ancient Egypt is famous for being the cradle of civilization, and for a good reason. It’s
+            among the oldest
+            and greatest civilizations. Ancient Egyptians cultivated an innovative and integrated culture on the banks
+            of the Nile Valley. They developed grain farming, a sophisticated system of political organization,
+            religion, writing, record-keeping, and a foundation for art to flourish. Ancient Egyptian civilization has
+            shined worldwide through millennia with iconic historical figures, from Akhenaten to Queen Hatshepsut and
+            from Tutankhamun to Ramesses II. The rest, as they say, is history!
+        </div>
+        <p class="font-bold text-2xl text-blue-800 mt-10">Discover Graeco-Roman Treasures</p>
+
+        <div class="mt-10">As extraordinary as it was, ancient Egyptian civilization was only the beginning of
+            history-making in the Nile Valley. Egypt also played an important cultural and political role in the
+            Graeco-Roman world. Alexander the Great’s arrival to Egypt in 332 BC marked the beginning of the
+            Graeco-Roman period, during which Egypt was home to such legendary figures as Queen Cleopatra
+        </div>
+        <p class="font-bold text-2xl text-blue-800 mt-10">Experience Christian Heritage</p>
+
+        <div class="mt-10">Christianity was brought to Egypt by the Apostle Saint Mark, early in the first century,
+            making the Egyptian Coptic Church one of the oldest churches in existence.
+        </div>
+        <div class="mt-5">
+            Today, visitors can still visit many of monasteries, such as the Monasteries of St Anthony and St Paul in
+            the Red Sea and the Red and White Monasteries in Suhag. They can also walk in the footsteps of the Holy
+            Family in Egypt by visiting the sites that were blessed by the Virgin Mary, the infant Jesus, and Joseph
+            during their three-and-a-half-year journey through Egypt seeking sanctuary and protection.
+        </div>
+        <p class="font-bold text-2xl text-blue-800 mt-10">Relive the Grandeur of Islamic Civilization</p>
+
+        <div class="mt-10">The arrival of Islam to Egypt heralded Egypt’s role as an important player in the medieval
+            world. Between 641 and 1517, a number of Arab-Islamic dynasties made Egypt a vital political and cultural
+            center. During the Islamic Period, dynasties like the Umayyads, Abbasids, Fatimids, Ayyubids, and Mamluks
+            left behind a wealth of Medieval Islamic architecture, transforming Cairo into the “City of a Thousand
+            Minarets.” The Mamluks were followed by nearly 400 years of Ottoman rule, as Egypt became one of the most
+            important provinces of the Ottoman Empire.
+        </div>
+        <div class="mt-5">
+            The Muhammad Ali dynasty marked the birth of the modern state of Egypt. Beginning in 1805, Muhammad Ali
+            presided over the building of an impressive modern administrative system that included the world’s earliest
+            modern postal services, railroad infrastructure, irrigation networks, conscription armies, manufacturing,
+            education, and cultural affairs.
+        </div>
+
+        <p class="font-bold text-2xl text-blue-800 mt-10">Modern Egypt</p>
+
+        <div class="mt-10">Khedive Ismail reshaped the urban landscape of key Egyptian cities between 1863 and 1879 by
+            introducing modern sewage systems, schools, state-of-the-art hospitals, and European-inspired architecture.
+        </div>
+        <div class="mt-5">
+            In 1952, Egypt became a republic, strengthening its position as the unparalleled political and cultural
+            heart of the Arabic world, setting trends in Middle Eastern music, literature, and cinema.
+        </div>
+
+        <div class="mt-5">
+            His Excellency Abdel Fattah al-Sisi has been the President of Egypt since 2014. During his time in office,
+            he has overseen a boom in the expansion and modernization of Egypt’s infrastructure across multiple sectors
+            nationwide. The government has spearheaded significant investment to modernize the country’s transportation
+            infrastructure, including roads and bridges, railways, metro and electric railways, sea ports, river
+            transport, land and dry ports, and logistics centers. Cairo International Airport and two other Egyptian
+            airports topped the list issued by the Airports Council International (ACI) of the ten leading African
+            airports in terms of passenger traffic. Eleven Egyptian airports obtained and renewed their certificates for
+            safe health travel from the ACI. In addition to revamping existing airports, Egypt is also building new
+            airports, such as Sphinx International Airport west of Cairo and the New Capital Airport in Egypt’s New
+            Administrative Capital City.
+        </div>
+
+        <div class="mt-5">
+            With an eye on the future, Egypt is developing new urban communities and holiday destinations, like
+            Al-Galala, the New Administrative Capital City, New Alamein City, New Aswan, and New Mansura that will
+            attract both domestic and international tourists.
+        </div>
+
+        <div class="mt-5">
+            The tourism and antiquities sectors have received unprecedented support from the President, which has
+            allowed the Ministry of Tourism and Antiquities to inaugurate new museums and restore over 100
+            archaeological sites, including mosques, churches, and synagogues. The Ministry has also been able to
+            continue with its ongoing conservation and preservation of Egypt’s archaeological treasures. New
+            archaeological discoveries continue to make international headlines and garner recognition as some of the
+            most important archaeological discoveries in the world.
+        </div>
+    </div>
+
+
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

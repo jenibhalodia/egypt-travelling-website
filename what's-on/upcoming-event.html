@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- Upcoming Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div class="bg-[#FAF0D2] h-80">
+        <div class="mx-72 pt-7 text-gray-500 font-bold">
+            <a class="hover:text-black" href="../index.html">Home</a>/ Upcoming Events
+        </div>
+        <div class="text-3xl font-bold mx-72 mt-8">Upcoming Events</div>
+        <div class="text-xl font-bold mx-72 mt-5">Filter by:</div>
+        <div class="flex gap-0 mt-5 mx-72 gap-5">
+            <div class="inline-block relative w-80 ">
+                <select
+                    class="block appearance-none w-full border bg-[#FAF0D2] border-gray-400 h-20  px-4 py-2 pr-8 shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <option selected disabled value="city">Cities</option>
+                    <option>All</option>
+                    <option>Cairo & Giza</option>
+                    <option>Sharm al-Sheikh</option>
+                    <option>Alexandria </option>
+                    <option>Fayyoum</option>
+                    <option>Dahab</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="inline-block relative w-80 ">
+                <select
+                    class="block appearance-none w-full border bg-[#FAF0D2] border-gray-400 h-20  px-4 py-2 pr-8 shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <option selected disabled value="Category">Category</option>
+                    <option>Festival</option>
+                    <option>History</option>
+                    <option>Musical</option>
+                    <option>Environment </option>
+                    <option>Art</option>
+                    <option>Technology</option>
+                    <option>Expo</option>
+                    <option>Sport</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+            <input type="date"
+                class=" bg-[#FAF0D2] border  border-gray-400 w-48 h-20  px-4 py-2 pr-8 shadow leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Date from">
+
+            <input type="date"
+                class=" bg-[#FAF0D2] border  border-gray-400 w-48 h-20  px-4 py-2 pr-8 shadow leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Date To">
+                <a  class="bg-blue-900 text-white px-12 flex flex-col justify-center" href="#">Search</a>
+        </div>
+    </div>
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

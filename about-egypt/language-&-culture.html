@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- LANGUAGE & CULTURE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+    <div>
+        <img class="h-[800px] w-full object-cover" src="https://www.experienceegypt.eg/images/geo.jpeg" alt="img">
+    </div>
+    <div class="mx-72 pt-14 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ LANGUAGE & CULTURE
+    </div>
+    <div class="mx-72 text-6xl font-bold mt-8">A FEAST FOR THE SENSES</div>
+
+    <div class="mx-72 mt-14">
+        <p class="font-bold text-2xl text-blue-800">Egypt’s People Are Its Greatest Treasure</p>
+        <div class="mt-5">Arabic is the official language of Egypt, spoken by the entire population of over 100 million
+            citizens. In urban centers and popular tourist destinations, many Egyptians understand and are fluent in
+            English. In tourist areas, other European languages—such as French, Russian, Ukrainian, Spanish, and
+            Italian—are also commonly spoken.
+        </div>
+        <div class="mt-5">Regardless of what language Egyptians speak, the language closest to their heart is laughter.
+            Egyptian culture is known for its love of humor and linguistic playfulness, and you will notice that even
+            the simplest interactions will leave you smiling with friendly wit and banter.
+        </div>
+
+        <p class="font-bold text-2xl text-blue-800 mt-5">Rich in Religious Tradition</p>
+        <div class="mt-5">Egypt’s Muslims and Christians have been living side by side and coexisting peacefully over
+            the centuries. Muslim holidays, such as the celebration of Eid twice a year, and Coptic Christian holidays,
+            such as Coptic Easter and Coptic Christmas, are large festivities celebrated with family, loved ones, and
+            special food. Egyptians share a reverence for community and family, with close-knit and warm relationships
+            being the norm.
+        </div>
+    </div>
+
+    <div class="mx-72 mt-20">
+        <div class="font-bold">
+            DISCOVER
+        </div>
+        <div class="font-bold text-4xl mt-2">Egyptian festivals and traditions</div>
+        <div class=" flex flex-row justify-center gap-7">
+            <div class="flex flex-col mt-16">
+                <img class="h-[330px] w-[412px] object-cover" src="https://www.experienceegypt.eg/images/ramadan-s.jpg"
+                    alt="img">
+                <div class="w-[412px] h-64  bg-[#F9CC67] text-black p-4">
+                    <p class="mt-1 text-base"> <strong class="mt-2 text-lg"> Ramadan</strong> is the holy month of
+                        fasting celebrated by Muslims around the
+                        world. It is marked by elaborate feasts shared daily at sunset with family and
+                        friends. Egyptian streets and balconies are decorated with colorful lanterns and
+                        lights throughout the entire month.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-16">
+                <img class="h-[330px] w-[412px] object-cover" src="https://www.experienceegypt.eg/images/k7k3eed.jpg"
+                    alt="img">
+                <div class="w-[412px] h-64  bg-[#19328E] text-[#F9CC67] p-4">
+                    <p class="mt-1 text-base"> <strong class="mt-2 text-lg">Eid al-Fitr</strong> is a three-day holiday
+                        that officially marks the end of
+                        Ramadan and fasting. Families gather to celebrate and eat Kahk al-Eid,
+                        traditional cookies filled with agameya (a filling made of honey and nuts),
+                        dates, or pistachios, and topped with powdered sugar.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-16">
+                <img class="h-[330px] w-[412px] object-cover"
+                    src="https://www.experienceegypt.eg/images/EidElAdha-Egypt.jpg" alt="img">
+                <div class="w-[412px] h-64  bg-[#30AFBF] text-[#19328E] p-4">
+                    <p class="mt-1 text-base"> <strong class="mt-2 text-lg">Eid al-Adha</strong> commemorates Prophet
+                        Ibrahim’s readiness to offer his son
+                        Ismail as an act of obedience to God and God’s provision of a lamb to sacrifice
+                        in place of Ismail. It also marks the end of the annual Hajj (pilgrimage) to
+                        Mecca. This four-day holiday is famous for elaborate meat dishes, family
+                        gatherings, shared feasts, and the distribution of meat to the needy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-72 mt-14">
+        <p class="font-bold text-2xl text-blue-800 mt-5">Food, Drink, & Entertainment</p>
+        <div class="mt-5">Egyptians love to talk, eat, and stay up late together. If you are looking for a travel
+            experience that will enrich your life with genuine human connections and laughter, Egypt is the place to go!
+            Perhaps owing to Egypt’s young population, with around 60% of Egyptians under 30, it is common to find
+            Egyptians staying up late enjoying conversation or the latest football match over a shared meal or several
+            rounds of tea. In Egypt, you will experience genuine hospitality and make lifelong friendships fast, usually
+            revolving around a memorable meal or two...or maybe even three!
+        </div>
+        <div class="mt-5">Egyptian cuisine will most certainly not disappoint. Egyptian cuisine has plenty of vegan and
+            pescatarian recipes that have been tried, tested, and developed through the ages, but an innovative culinary
+            scene means you can go on food tours to sample a variety of tempting dishes in diverse settings, both
+            traditional and upscale. Most hotels serve international cuisine alongside Egyptian dishes. Present-day
+            Egypt is also known for being the cultural hub of the Arab world with a vast production of art, music, film,
+            and a lively visual and performative arts scene—so after your meal, make sure to look up <strong
+                class="text-blue-900"> the current
+                cultural events happening near you!</strong>
+        </div>
+
+        <p class="font-bold text-2xl text-blue-800 mt-10">Here are some favorites from Egyptian cuisine that are not to
+            be missed:</p>
+    </div>
+
+    <div class="mx-72 mt-20">
+        <div class="font-bold">
+            DISCOVER
+        </div>
+        <div class="font-bold text-4xl mt-2">Egyptian Food Favorites</div>
+        <div class=" flex flex-row justify-center gap-7">
+            <div class="flex flex-col mt-16">
+                <img class="h-[330px] w-[412px] object-cover"
+                    src="https://www.atyabtabkha.com/uploads/sites/2/2021/10/acb4e634a94842ae7732159c6a547e1ea0e3372b.jpg"
+                    alt="img">
+                <div class="w-[412px] h-56  bg-[#F9CC67] text-black p-4">
+                    <p class="mt-1 text-base"> <strong class="mt-2 text-lg">Foul -</strong> The most common breakfast
+                        staple in Egypt, buttery, slow-cooked,
+                        spiced fava beans are eaten with delicious Egyptian baladi bread
+                        (Egyptian flatbread).
+
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-16">
+                <img class="h-[330px] w-[412px] object-cover"
+                    src="https://www.supermama.me/system/App/Entities/Recipe/images/000/106/767/watermarked/%D8%A7%D9%84%D8%B7%D8%B9%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9-%D9%85%D8%AB%D9%84-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B9%D9%85.jpg"
+                    alt="img">
+                <div class="w-[412px] h-56 bg-[#F7523F] text-white p-4">
+                    <p class="mt-1 text-base"> <strong class="mt-2 text-lg">Taameya -</strong> This vegan fritter is
+                        made of ground fava beans and mixed with aromatic herbs to make a delicious patty that is
+                        crunchy on the outside and airy and soft on the inside.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-16">
+                <img class="h-[330px] w-[412px] object-cover"
+                    src="https://www.experienceegypt.eg/images/large-photos/koshry.jpg" alt="img">
+                <div class="w-[412px] h-56 bg-[#19328E] text-[#F9CC67] p-4">
+                    <p class="mt-1 text-base"> <strong class="mt-2 text-lg">Koshary -</strong> A mix of pasta, rice,
+                        brown lentils, chickpeas, garlicky red sauce, and fried onions, this Egyptian classic is both
+                        filling and deliciously flavorful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>
