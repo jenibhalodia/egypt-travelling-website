@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- About us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+
+
+    <div class="mx-72 pt-14 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ About us
+    </div>
+
+    <div class="mx-72 mt-5">
+        The Egyptian Tourism Authority (ETA) was established in 1981—by Presidential Decree No. 134—as a regulatory body
+        affiliated with the Ministry of Tourism. ETA’s mission is to boost international tourism by promoting Egypt’s
+        rich history and civilization and highlighting the country’s abundance of diverse tourist attractions. Part of
+        ETA’s mandate is to also address any obstacles that may stand in the way of growth in Egypt’s tourism sector. It
+        also aims to promote domestic tourism, raise tourism awareness throughout the country, and strengthen the
+        connection between Egyptians and their heritage.
+    </div>
+
+    <div class="mx-72 font-bold mt-10">
+        ETA works to achieve its objectives by:
+    </div>
+
+    <div class="mx-72">
+        <li>Highlighting the diversity and variety of Egypt’s tourist attractions and destinations</li>
+        <li>Developing marketing strategies and programs to promote international and domestic tourism</li>
+        <li> Providing technical and marketing support in coordination with relevant entities for the promotion of
+            tourism
+        </li>
+
+        <div class="mt-7">ETA also organizes and sponsors tourism, sports, social, cultural, entertainment, and educational events
+            held at tourist attractions, archaeological sites, and museums across Egypt. These activities shed light on
+            Egypt’s diversity of experiences and highlight the country’s competitive edge as a destination for
+            international travelers.</div>
+
+        <div  class="mt-7">The ETA Board of Directors is chaired by the Minister of Tourism. Its members include the ETA’s CEO and
+            representatives from relevant entities, such as the Chairman of the Egyptian Tourism Federation (ETF), the
+            Egyptian Travel Agents Association, and the Egyptian Hotel Association; the Chairman of the Egyptian Civil
+            Aviation Authority; the Secretary-General of the Supreme Council of Antiquities; the Director General of the
+            Grand Egyptian Museum; and four additional tourism sector experts. The ETA Board of Directors is responsible
+            for setting ETA’s general policies and making the necessary decisions to help achieve its goals and
+            objectives.</div>
+    </div>
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>

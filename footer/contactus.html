@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt travel- Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start : Navbar -->
+    <div w3-include-html="../navbar.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- End : Navbar -->
+
+
+    <div class="mx-72 pt-14 text-gray-500 font-bold">
+        <a class="hover:text-black" href="../index.html">Home</a>/ Contact us
+    </div>
+
+
+    <div class="mx-72 font-bold mt-10 text-blue-900 text-2xl">
+        Contact Us
+    </div>
+    <div class="mx-72">
+        <div class="flex flex-row gap-5">
+            <div>
+                <div class="mt-10 font-bold text-xl"> Full Name</div>
+                <input type="text" class="border border-black h-20 w-[655px] p-4 mt-5 text-lg " placeholder="Full name">
+            </div>
+            <div>
+                <div class="mt-10 font-bold text-xl"> Email</div>
+                <input type="email" class="border border-black h-20 w-[655px] p-4 mt-5 text-lg " placeholder="Email">
+            </div>
+        </div>
+        <div>
+            <div class="mt-10 font-bold text-xl"> Subject</div>
+            <input type="text" class="border border-black h-20 w-full p-4 mt-5 text-lg " placeholder="Subject">
+        </div>
+
+        <div>
+            <div class="mt-10 font-bold text-xl"> Message</div>
+            <input type="text" class="border border-black h-44 w-full px-4 pb-32  mt-5 text-lg "
+                placeholder="Write your message here..">
+        </div>
+        <div class="mt-10">
+            <a class="bg-blue-900 text-white px-12 py-5 font-bold text-lg" href="#">Submit</a>
+        </div>
+    </div>I
+
+
+    <!-- Start : Footer -->
+    <div class="mt-10" w3-include-html="../footer.html"></div>
+    <!-- End : Footer -->
+
+
+
+</body>
+
+</html>
